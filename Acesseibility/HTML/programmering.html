@@ -48,6 +48,36 @@
                 <a class="opggave2" active href="oppgaver.html">Oppgave11</a>
                 <a class="opggave2" active href="oppgaver.html">Oppgave12</a>
             </div>
+            <button id="innlevering">Lag ny oppgave</button> 
+            <div class="nyOppgave" style="display: none;">
+                Oppgavenavn
+                <input id="name" type="text">
+                Oppgavebeskrivelse
+                <input id="description" type="text">
+                <button id="submit">Submit changes</button>
+            </div>
+        <script>
+            var innleveringEl = document.querySelector("#innlevering");
+            var nyOppgaveEl = document.querySelector(".nyOppgave");
+            var assignmentList = document.querySelector(".oppgaver2");
+            var nameEl = document.querySelector("#name");
+            var descriptionEl = document.querySelector("#description");
+            var submitEl = document.querySelector("#submit");
+            
+            innleveringEl.addEventListener("click", openWindow);
+            submitEl.addEventListener("click", addAssignment);
+            
+            function openWindow(){
+                nyOppgaveEl.style.display = "block";
+            }
+            function addAssignment(){
+                var oppgave = document.createElement("a");
+                oppgave.innerHTML = nameEl.value;
+                oppgave.href = "Oppgaver.html";
+                oppgave.setAttribute("class", "oppgave2");
+                assignmentList.appendChild(oppgave);
+            }
+        </script>
             
             <div class="dinprofil">
                 <h2 class="profil"> Din profil</h2>
