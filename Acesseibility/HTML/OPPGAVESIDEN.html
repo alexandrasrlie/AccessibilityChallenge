@@ -32,8 +32,19 @@
     </div>
 
     <div class="leverinn">
-        <a href=""> </a> <button> Lever inn </button>
+        <a href=""> </a> <button id ="lever"> Lever inn </button>
         <p> Karakter: </p>
+        <p id="resultat"></p>
+        <script>
+        var leverEl = document.querySelector("#lever");
+        var resultatEl = document.querySelector("#resultat");
+        
+        leverEl.addEventListener("click", giSvar);
+        function giSvar() {
+            resultatEl.innerHTML = "Du har levert en oppgave";
+            
+        }
+    </script>
     </div>
     <div class="profil">
         <p> NAVN: </p>
