@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<meta charset="utf-8">
+<title>PlatformL</title>
+</head>
+<body>    
+    <nav>
+        <a href="fag.html"><img src="../../BILDER/platforml.png" title="HOMEPAGE" class="PlatformL" alt="PlaftfomrL"></a>
+        <div class="fagLinker">
+            <a href="engelsk.html">Engelsk</a>
+            <a href="matte.html">Matte</a>
+            <a href="norsk.html">Norsk</a>
+        </div>
+        <a href="mail.html"><img src="../../BILDER/mail.png" title="MAIL" class="mail" alt="mail"></a>
+        <img src="../../BILDER/profil.png" title="PROFILE" class="profile" alt="Profil">
+        <a href="../forside.html" > <img src="../../BILDER/loggUt.png" title="Loggut" id="Loggut" alt="Loggut"></a>
+    </nav>
+    <main>
+        <div class="fagnavn">
+            <h1> NORSK </h1>
+        </div>
+        
+        <div class="oppgaverVenstre">
+            <a class="opggave" href="oppgaver.html">Oppgave1</a>
+            <a class="opggave" href="oppgaver.html">Oppgave2</a>
+            <a class="opggave" href="oppgaver.html">Oppgave3</a>
+            <a class="opggave" href="oppgaver.html">Oppgave4</a>
+            <a class="opggave" href="oppgaver.html">Oppgave5</a>
+            <a class="opggave" href="oppgaver.html">Oppgave6</a>
+        </div>
+
+        <div class="oppgaverHoyre">
+            <a class="opggave2" href="oppgaver.html">Oppgave7</a>
+            <a class="opggave2" href="oppgaver.html">Oppgave8</a>
+            <a class="opggave2" href="oppgaver.html">Oppgave9</a>
+            <a class="opggave2" href="oppgaver.html">Oppgave10</a>
+            <a class="opggave2" href="oppgaver.html">Oppgave11</a>
+            <a class="opggave2" href="oppgaver.html">Oppgave12</a>
+        </div>   
+                
+        <button id="innlevering">Lag ny oppgave</button> 
+        
+        <div class="nyOppgave" style="display: none;">
+            Oppgavenavn
+            <input id="name" type="text">
+            Oppgavebeskrivelse
+            <input id="description" type="text">
+            <button id="submit">Submit changes</button>
+        </div>
+        
+        <script>
+            var innleveringEl = document.querySelector("#innlevering");
+            var nyOppgaveEl = document.querySelector(".nyOppgave");
+            var assignmentList = document.querySelector(".oppgaverHoyre");
+            var nameEl = document.querySelector("#name");
+            var descriptionEl = document.querySelector("#description");
+            var submitEl = document.querySelector("#submit");
+            
+            innleveringEl.addEventListener("click", openWindow);
+            submitEl.addEventListener("click", addAssignment);
+            
+            function openWindow(){
+                nyOppgaveEl.style.display = "block";
+            }
+            function addAssignment(){
+                var oppgave = document.createElement("a");
+                oppgave.innerHTML = nameEl.value;
+                oppgave.href = "Oppgaver.html";
+                oppgave.setAttribute("class", "oppgave2");
+                assignmentList.appendChild(oppgave);
+            }
+        </script>
+    </main>
+    <div class="profil">
+            <h2> Din profil</h2>
+            <p>Fornavn: Adam </p>
+            <p>Etternavn: Eriksen </p>
+            <p>E-post: a_eriksenplatforml.no </p>
+            <p>Ansatt-id: a-326283 </p>
+            <p>Tlfnr: 92834731</p>     
+    </div> 
+</body>
+</html>
