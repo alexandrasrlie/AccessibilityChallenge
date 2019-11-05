@@ -1,0 +1,65 @@
+body {
+    background: #D7E3F1;
+    margin: 0;
+}
+
+nav {
+    background-color: white;
+    height: 120px;
+}
+.platformL {
+    position: relative;
+    height: 130px;
+    width: 220px;
+    margin-right: auto;
+}
+.mail {
+    padding: 10px;
+    float: right;
+    width: 100px;
+    height: 80px;
+}
+
+.profile, .loggut {
+    padding: 10px;
+    float: right;
+    width: 80px;
+    height: 80px;
+}
+
+.fag {
+    width: 100%;
+    text-align: center;
+    }
+
+
+
+.matte, .norsk, .engelsk {
+    background-color: black;
+    display: inline-block;
+    margin: 5%;
+}
+
+button {
+    background-color: lightblue;
+    color: white;
+    padding: 30px 50px;
+    font-size: 20px;
+}
+button:hover {
+    background-color: blue;
+}
+.boks {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial, sans-serif;
+}
+
+.oppgaver a {
+    display: block;
+    text-align: center;
+
+}
