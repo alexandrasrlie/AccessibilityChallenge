@@ -106,5 +106,9 @@ button:hover {
     padding: 1rem 2rem;
     background-color: lightblue;
     color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.mailL {
+    text-align: center;
+    color: white;
 }
