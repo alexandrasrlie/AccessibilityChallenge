@@ -1,0 +1,63 @@
+  
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title> PlatformL </title>
+    <link rel="stylesheet" type="text/css" href="..CSS/style.css">  
+</head>
+<body>
+<nav>
+    <a href="fag.html"><img src="../../BILDER/platforml.png" title="HOMEPAGE" class="platformL" alt="PlaftfomrL"></a>
+    <a href="../forside.html" > <img src="../../BILDER/loggUt.png" class="loggut" title="Loggut" id="loggut" alt="Logg ut" > </a>
+    <a href="mail.html" ><img src="../../BILDER/mail.png" title="MAIL" class="profile" alt="mail"></a>
+    <a href="profil.html" ><img src="../../BILDER/profil.png" title="PROFILE" class="profile" alt="Profil"></a>
+</nav>
+    <main>
+        <div class="oppagve">
+            <h1> OPPGAVENAVN </h1>
+            <p> Oppgavetekst: <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in magna eget odio maximus congue. Maecenas congue dui orci, vel tempus odio efficitur sit amet.
+                Aenean malesuada et est non sollicitudin. Etiam non tristique tellus, sit amet interdum tellus. Quisque tincidunt vel lacus in interdum. Fusce dolor urna,
+                ornare eget mattis venenatis, molestie id lectus. Maecenas placerat elit sed feugiat placerat. Nunc erat nulla, hendrerit a eleifend id, feugiat sit amet ligula.
+                Sed varius erat ut congue volutpat. Duis nec nunc et urna convallis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nulla euismod, arcu at posuere tristique, enim nulla egestas nulla, nec varius felis nisi sit amet sem. Suspendisse dapibus, turpis a tempor hendrerit, nunc nisl commodo turpis,
+                luctus posuere odio tellus eu justo. Nulla a varius eros. Phasellus varius eget sapien eget convallis.
+
+                Phasellus enim est, scelerisque vitae dapibus vel, suscipit vel risus. Duis nulla dui, facilisis ac lacinia vel, elementum vel nunc. Ut eu tempor mi.
+                Pellentesque quis massa id nisi tempus rutrum in ut nisi.
+                Nam a aliquam ligula. Suspendisse ipsum purus, varius in nulla in, rhoncus pulvinar turpis. Maecenas malesuada eros ac risus tincidunt, a placerat est iaculis.
+                Sed maximus imperdiet dignissim. Nullam tristique leo eget nulla vestibulum, eu molestie purus ornare. Sed sit amet augue tortor. Aenean sagittis aliquet feugiat.
+
+                Vestibulum dignissim enim justo, et ultricies ex gravida quis. Vivamus congue ante ut placerat consectetur. Duis porta, quam in ultrices elementum, tellus ligula imperdiet sapien,
+                varius egestas sapien felis pulvinar enim. Quisque tincidunt nibh at tincidunt scelerisque. Fusce aliquam quis mauris et efficitur. Cras justo libero, scelerisque et eros quis, facilisis tincidunt ex.
+                Mauris quis neque viverra, porta mi ut, sodales libero.</p>
+        </div>
+
+        <div class="leverinn">
+            <input type="file">
+            <br>
+            <button id="lever"> Lever inn </button>
+            <p> Karakter: </p>
+            <p id="resultat"></p>
+        </div>
+        <script>
+            var leverEl = document.querySelector("#lever");
+            var resultatEl = document.querySelector("#resultat");
+
+            leverEl.addEventListener("click", giSvar);
+            function giSvar() {
+                resultatEl.innerHTML = "Du har levert en oppgave";
+
+            }
+        </script>
+    </main>
+    <div class="profil">
+        <p> NAVN: </p>
+        <p> KLASSE: </p>
+        <P> ÅRSTRINN: </P>
+        <p> STUDENTNUMMER: </p>
+        <P> STUDIERETNING: </P>
+        <p> TELEFONNUMMER: </p>
+    </div>
+</body>
+</html>
