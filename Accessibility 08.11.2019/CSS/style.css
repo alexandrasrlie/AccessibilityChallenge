@@ -97,3 +97,14 @@ button:hover {
 #submit {
     padding: 2px 4px;
 }
+
+.email p {
+    display: block;
+    text-align: center;
+    width: 38rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: lightblue;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
