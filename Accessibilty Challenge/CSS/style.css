@@ -1,0 +1,185 @@
+body {
+    background: #D7E3F1;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: white;
+    height: 120px;
+}
+.platformL {
+    position: relative;
+    height: 130px;
+    width: 220px;
+    margin-right: auto;
+}
+.mail {
+    padding: 10px;
+    float: right;
+    width: 100px;
+    height: 80px;
+}
+
+.profile, .loggut {
+    padding: 10px;
+    float: right;
+    width: 80px;
+    height: 80px;
+}
+
+.fag, .forside {
+    width: 100%;
+    text-align: center;
+}
+
+.matte, .norsk, .engelsk {
+    background-color: black;
+    display: inline-block;
+    margin: 5%;
+}
+
+button {
+    background-color: lightblue;
+    color: white;
+    padding: 30px 50px;
+    font-size: 20px;
+}
+button:hover {
+    background-color: blue;
+}
+.boks {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial, sans-serif;
+}
+
+.oppgaver a {
+    display: block;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+}
+#minDIV {
+    width: 38rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: lightblue;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.oppgaverVenstre, .oppgaverHoyre {
+    width: 38rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: lightblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+}
+
+#innlevering {
+    display: block;
+    margin: 0 auto;
+}
+
+.nyOppgave {
+    width: 48rem;
+    margin: 0 auto;
+}
+
+#submit {
+    padding: 2px 4px;
+}
+
+.email p {
+    display: block;
+    text-align: center;
+    width: 38rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: lightblue;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.mailL {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 1200px){
+    .platformL{
+        width: 40%;
+        height: 100px;
+    }
+    .mail, .loggut, .profile{
+        width: 12%;
+        height: 55px;
+        margin-top: 5%;
+    }
+    nav{
+        width: auto;
+    }
+    button {
+        margin: auto;
+    }
+    .text1drop, .text2drop, .text3drop{
+        padding: 30px 30px;
+        font-size: 25px;
+        display: block;
+        width: 60%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    #minDIV {
+        width: 80%;
+        font-size: 20px;
+    }
+   .forside button{
+       padding: 50px 80px;
+       font-size: 30px;
+   }
+   .oppgaverVenstre{
+       width: 25%;
+       display: inline-block;
+       margin-left: 5%;
+       vertical-align: top;
+   }
+   .oppgaverHoyre{
+       width: 25%;
+       display: inline-block;
+       margin-left: 4%;
+       vertical-align: top;
+   }
+   .oppgaverHoyre a, .oppgaverVenstre a{
+       display: block;
+       padding: 6%;
+       font-size: 20px;
+       vertical-align: top;
+   }
+   h4{
+       display: inline-block;
+   }
+   #name, #description{
+       display: block;
+   }
+   #submit, #innlevering, #description{
+       margin-bottom: 5%;
+   }
+   .nyOppgave{
+       width: 90%;
+   }
+   .oppagve{
+       font-size: 20px;
+       line-height: 1.8;
+   }
+   .email p {
+       width: 70%
+   }
+}

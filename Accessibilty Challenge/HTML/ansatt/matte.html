@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<meta charset="utf-8">
+<title>PlatformL</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+
+</head>
+<body>
+<nav>
+    <a href="fag.html"><img src="../../BILDER/platforml.png" title="HOMEPAGE" class="platformL" alt="PlaftfomrL"></a>
+    <a href="../forside.html" > <img src="../../BILDER/loggUt.png" class="loggut" title="Loggut" id="loggut" alt="Logg ut" > </a>
+    <a href="mail.html" ><img src="../../BILDER/mail.png" title="MAIL" class="profile" alt="mail"></a>
+    <a href="profil.html" ><img src="../../BILDER/profil.png" title="PROFILE" class="profile" alt="Profil"></a>
+</nav>
+    <main>
+        <br>
+        <div class="fag">
+            <a href="programmering.html"><button class="text1drop">Programmering</button></a>
+            <a href="matte.html"><button class="text2drop" style="background-color: blue">Diskret Matematikk</button></a>
+            <a href="web.html"><button class="text3drop">Webutvikling</button></a>
+        </div>
+
+
+        <div class="oppgaverVenstre">
+            <a class="opggave" href="oppgave.html">Oppgave1</a>
+            <a class="opggave" href="oppgave.html">Oppgave2</a>
+            <a class="opggave" href="oppgave.html">Oppgave3</a>
+            <a class="opggave" href="oppgave.html">Oppgave4</a>
+            <a class="opggave" href="oppgave.html">Oppgave5</a>
+            <a class="opggave" href="oppgave.html">Oppgave6</a>
+        </div>
+
+        <div class="oppgaverHoyre">
+            <a class="opggave2" href="oppgave.html">Oppgave7</a>
+            <a class="opggave2" href="oppgave.html">Oppgave8</a>
+            <a class="opggave2" href="oppgave.html">Oppgave9</a>
+            <a class="opggave2" href="oppgave.html">Oppgave10</a>
+            <a class="opggave2" href="oppgave.html">Oppgave11</a>
+            <a class="opggave2" href="oppgave.html">Oppgave12</a>
+        </div>
+        <button id="innlevering">Lag ny oppgave</button>
+
+        <div class="nyOppgave" style="display: none;">
+            <h4>Oppgavenavn</h4>
+            <input id="name" type="text">
+            <h4>Oppgavebeskrivelse</h4>
+            <input id="description" type="text">
+            <button id="submit">Submit changes</button>
+        </div>
+
+        <script>
+            var innleveringEl = document.querySelector("#innlevering");
+            var nyOppgaveEl = document.querySelector(".nyOppgave");
+            var assignmentList1 = document.querySelector(".oppgaverVenstre");
+            var assignmentList2 = document.querySelector(".oppgaverHoyre");
+            var nameEl = document.querySelector("#name");
+            var descriptionEl = document.querySelector("#description");
+            var submitEl = document.querySelector("#submit");
+
+            innleveringEl.addEventListener("click", openWindow);
+            submitEl.addEventListener("click", addAssignment);
+            var teller1 = 6;
+            var teller2 = 6;
+
+            function openWindow(){
+                nyOppgaveEl.style.display = "block";
+            }
+            function addAssignment(){
+                var oppgave = document.createElement("a");
+                oppgave.innerHTML = nameEl.value;
+                oppgave.href = "oppgave.html";
+
+                if(teller1 <= teller2){
+                    oppgave.setAttribute("class", "oppgave");
+                    assignmentList1.appendChild(oppgave);
+                    teller1 += 1;
+                }else if (teller1 > teller2){
+                    oppgave.setAttribute("class", "oppgave2");
+                    assignmentList2.appendChild(oppgave);
+                    teller2 += 1;
+                }
+            }
+        </script>
+    </main>
+
+</body>
+</html>
